@@ -1,3 +1,4 @@
 *.o
 printfTester
+ft_printf_tester
 libftprintf.a
