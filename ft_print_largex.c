@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_largex.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ryosuke <ryosuke@student.42.fr>            +#+  +:+       +#+        */
+/*   By: rmatsush <rmatsush@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 01:42:20 by ryosuke           #+#    #+#             */
-/*   Updated: 2023/10/27 22:53:36 by ryosuke          ###   ########.fr       */
+/*   Updated: 2023/10/27 23:07:43 by rmatsush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	ft_print_largex(const char **fmt, int *count, va_list *ap)
 	unsigned int	n;
 
 	n = (unsigned int)va_arg(*ap, unsigned int);
-	ft_put16largexnbr(n, 1);
+	ft_put16_largexnbr(n, 1);
 	i = count_digit16(n);
 	*count += i;
 	(*fmt)++;

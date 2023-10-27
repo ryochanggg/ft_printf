@@ -25,6 +25,9 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
+.c.o: $(OBJS)
+	$(CC) $(CFLAG) $(INCLUDE) -c $< -o $@
+
 clean:
 	$(RM) $(OBJS)
 
@@ -33,4 +36,4 @@ fclean: clean
 
 re: fclean all
 
-
+.PHONY: bonus clean fclean re all

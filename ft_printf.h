@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ryosuke <ryosuke@student.42.fr>            +#+  +:+       +#+        */
+/*   By: rmatsush <rmatsush@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 02:09:42 by ryosuke           #+#    #+#             */
-/*   Updated: 2023/10/27 22:52:55 by ryosuke          ###   ########.fr       */
+/*   Updated: 2023/10/27 23:07:54 by rmatsush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_print_s(const char **fmt, int *count, va_list *ap);
 void	ft_print_u(const char **fmt, int *count, va_list *ap);
 void	ft_print_x(const char **fmt, int *count, va_list *ap);
 void	ft_put16nbr(uintptr_t n, int fd);
-void	ft_put16largexnbr(uintptr_t n, int fd);
+void	ft_put16_largexnbr(uintptr_t n, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putunbr(unsigned int n, int fd);

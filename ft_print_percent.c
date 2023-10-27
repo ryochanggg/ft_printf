@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_percent.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ryosuke <ryosuke@student.42.fr>            +#+  +:+       +#+        */
+/*   By: rmatsush <rmatsush@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 01:45:40 by ryosuke           #+#    #+#             */
-/*   Updated: 2023/10/27 21:40:05 by ryosuke          ###   ########.fr       */
+/*   Updated: 2023/10/27 23:10:46 by rmatsush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	ft_print_percent(const char **fmt, int *count, va_list *ap)
 {
+	(void)ap;
 	write(1, "%", 1);
 	(*count)++;
 	(*fmt)++;

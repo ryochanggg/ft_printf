@@ -1,2 +1,3 @@
 *.o
 printfTester
+libftprintf.a
